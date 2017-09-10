@@ -21,7 +21,7 @@ export class InvolveDataProvider {
 
   getJsonData() {
       this.jsonFileName = 'https://www.reddit.com/r/worldnews/.json';
-      this.jsonFileName = './productdata.test.json';
+      this.jsonFileName = 'https://raw.githubusercontent.com/dijkie73/comparegenius/master/src/productdata.test2.json';
     return this.http.get(this.jsonFileName).map(res => res.json());
   }
 
