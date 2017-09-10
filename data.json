@@ -1,0 +1,27 @@
+{
+  "SA609EL08M93SNAFAMZ": {
+    "Product_id": "SA609EL08M93SNAFAMZ",
+    "Product_name": "J120F - Galaxy J1 - 4.5 - 8GB - 1GB RAM - 5MP Camera - Black"
+  },
+  "SA609EL144308NAFAMZ": {
+    "Product_id": "SA609EL144308NAFAMZ",
+    "Product_name": "Galaxy J1 J120F - 4.5 - 8GB - 1GB RAM - 5MP Camera - White"
+  },
+  {
+    "Product_id": "SA609EL144308NAFAMZ",
+    "Product_name": "Galaxy J1 J120F - 4.5 - 8GB - 1GB RAM - 5MP Camera - White",
+    "Description": "Samsung Galaxy J1 SmartphoneThe bright viewing experienceImmerse yourself and enjoy the bright viewingexperience on your Samsung Galaxy J1 phone. Its 4.5  screen lets your get a great media experience while watching your favorite videos or browsing through social media. It is characterized by a wide palette ofcolor reproduction. It is easily accessible wherever and whenever you want to enjoy this surreal visual experience.Increased ProductivityWith 4-core 1.3 GHzprocessor and 1 GB RAM, this phone provide...",
+    "Merchant_category": "Root Category > Mobile Phones > Smartphones > Phones & Tablets",
+    "Brand_name": "Samsung",
+    "ImageURL": "http://marketing.net.daraz.pk/ts/i3801839/tsv?tst=!!TIME_STAMP!!&amc=performance.Darazpk.244564.256370.23912&rmd=3&trg=https%3A%2F%2Fpk.daraz.io%2F4fv9NtQsrTRFv2V4egDk3vbwhmY%3D%2Ffit-in%2F500x500%2Ffilters%3Afill%28white%29%2Fproduct%2F67%2F37516%2F1.jpg%3F7975",
+    "Price": "12500.00",
+    "ModelNumber": "SA609EL144308NAFAMZ",
+    "prefixURL": "http://invol.co/aff_m?offer_id=1648&aff_id=18418&source=datafeed&url=",
+    "exampleURi": "http://invol.co/aff_m?offer_id=1648&aff_id=18418&source=datafeed&url=https%3A%2F%2Fwww.daraz.pk%2Fj120f-galaxy-j1-2016-edition-4.5-8gb-hdd-1gb-ram-white-samsung-mpg44693.html%2F",
+    "exampleURL": "http://invol.co/aff_m?offer_id=1648&aff_id=18418&source=datafeed&url=https%3A%2F%2Fwww.daraz.pk%2Fj120f-galaxy-j1-2016-edition-4.5-8gb-hdd-1gb-ram-white-samsung-mpg44693.html%2F",
+    "ProductURL": "https://www.daraz.pk/j120f-galaxy-j1-2016-edition-4.5-8gb-hdd-1gb-ram-white-samsung-mpg44693.html/",
+    "Brand": "Samsung"
+  }
+}
+
+https://export.net.jumia.com/2b98293d-1382-4972-bc59-8bd212e8622e/api/productdataexport_29?pid=256370&format=json&columns=Product_id,Product_name,Description,Merchant_category,Brand_name,ImageURL,Delivery_time,Price,ModelNumber,ProductURL,Brand,EAN,Availability,StockAvailability,SalePrice,Price2
