@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\env",
+    "\\resources",
     "\\src",
-    "\\src\\app",
-    "\\src\\pages",
+    "\\src\\assets",
+    "\\src\\assets\\icon",
     "\\src\\pages\\home",
     "\\src\\pages\\product-details",
     "\\src\\pages\\product-list",
-    "\\src\\pages\\products-by-category",
-    "\\src\\providers",
-    "\\src\\providers\\products"
+    "\\src\\pages\\products-by-category"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\src\\assets\\icon\\favicon.ico",
   "PreviewInSolutionExplorer": false
 }

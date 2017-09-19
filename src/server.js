@@ -2,7 +2,8 @@ const express = require('express');
 const compression = require('compression');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
+
 const ENV = require(path.join(__dirname + '/env/' + (process.env.NODE_ENV ? process.env.NODE_ENV : 'dev') + '.json'));
 const forceSSL = function() {
   return function (req, res, next) {
@@ -28,4 +29,5 @@ app.get('/*', function(req, res) {
 
 app.listen(port, function() {
     console.log('Listening on port ' + port + '. isProduction : ' + ENV.PRODUCTION);
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
