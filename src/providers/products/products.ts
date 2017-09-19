@@ -2,7 +2,11 @@ import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseObjectObservable, FirebaseListObservable } from 'angularfire2/database';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
-import { Product } from '../../store';
+import { Product, Image } from '../../store';
+
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+
+
 
 /*
   Generated class for the ProductsProvider provider.
@@ -17,14 +21,33 @@ export class ProductsProvider {
     products: FirebaseListObservable<Product[]> = null; //  list of objects
     product: FirebaseObjectObservable<Product> = null; //   single object
 
-    constructor(public db: AngularFireDatabase) {
-        //this.products = db.list(this.basePath);
+    //const limit: BehaviorSubject<number> = new BehaviorSubject<number>(3);
+    lastKey: string = '';
+    queryable: boolean = true;
+    offset: number = 3;
+
+
+    constructor(private db: AngularFireDatabase) {
+        this.products = this.db.list(this.basePath);
+    }
+
+    getLimitedProductList(offset, startKey?): FirebaseListObservable<Product[]> {
+        var p = new Product();
+
+        return this.db.list(this.basePath, {
+            query: {
+                orderByChild: 'title',
+                startAt: startKey,
+                limitToFirst: offset + 1
+            }
+        });
     }
 
     getProductsList(query = {}): FirebaseListObservable<Product[]> {
         this.products = this.db.list(this.basePath, {
             query: query
         });
+
         return this.products
     }
 

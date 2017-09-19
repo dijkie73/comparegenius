@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>CompareGenius</ion-title>
+    <ion-title>CompareGenius.pk</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -23,7 +23,7 @@
   <ion-grid>
     <ion-row>
       <ion-slides #productSlides pager>
-        <ion-slide *ngFor="let product of productsList | async">
+        <ion-slide *ngFor="let product of productsList | async" (click)="openProductPage(product)">
           <ion-card no-padding>
             <img [src]="product.featuredImage"/>
             <h1 padding center> {{ product.title }} </h1>

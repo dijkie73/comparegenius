@@ -14,7 +14,10 @@
 
 
 <ion-content padding>
-  <div class="product-list" ng-class="{'list-view': layout=='list'}">
+  <ul>
+    <li>item1</li>
+  </ul>
+  <!--<div class="product-list" ng-class="{'list-view': layout=='list'}">
     <ul>
       <li class="list-item" ng-repeat="item in productList | orderBy:order" ui-sref="app.single({id: 123})">
         <div class="product-image" style="background: url('{{item.imgUrl}}');">
@@ -24,11 +27,11 @@
         <small class="price">{{item.price}} GBP</small>
       </li>
     </ul>
-  </div>
+  </div>-->
 </ion-content>
 
 
-<ion-view view-title="Knitwear" class="product">
+<!--ion-view view-title="Knitwear" class="product">
   <div class="bar bar-subheader">
     <div class="button-bar bar-light">
       <div class="row">
@@ -59,4 +62,4 @@
       </ul>
     </div>
   </ion-content>
-</ion-view>
+</ion-view>-->

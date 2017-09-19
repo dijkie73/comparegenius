@@ -3,7 +3,8 @@ import { NavController, Slides } from 'ionic-angular';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Subject } from 'rxjs/Subject';
 import { ProductsProvider } from '../../providers/products/products';
-import { Product } from '../../store';
+import { ProductDetailsPage } from '../product-details/product-details';
+import { Product, Brand } from '../../store';
 
 @Component({
   selector: 'page-home',
@@ -32,14 +33,14 @@ export class HomePage {
 
         this.productsList = this.productsProvider.getMainProductsList();
 
-        this.prod.brand = "Samsung";
+        this.prod.brand = new Brand('Apple');
         this.prod.categoryKey = "mobilephones";
-        this.prod.featuredImage = "";
-        this.prod.id = 1;
-        this.prod.shortDescription = "";
-        this.prod.title = "Samsung";
-        this.prod.urlName = "samsung";
-
+        this.prod.featuredImage = "http://res.cloudinary.com/comparegenius/image/upload/c_scale,h_150,q_auto/v1505854325/products/smartphones/apple/apple-iphone-x-front-homescreen.png";
+        this.prod.id = 4;
+        this.prod.shortDescription = "New Apple Iphone X";
+        this.prod.title = "Apple iPhone X";
+        this.prod.urlName = "apple-iphone-x";
+        //console.log('create prod');
         //this.productsProvider.createProduct(this.prod);
 
         this.sizeSubject = new Subject();
@@ -54,6 +55,8 @@ export class HomePage {
         this.sizeSubject.next(size);
     }
 
+    // Fired only when a view is stored in memory.
+    // This event is NOT fired on entering a view that is already cached.It’s a nice place for init related tasks.
     ionViewDidLoad() {
         setInterval(() => {
 
@@ -62,5 +65,9 @@ export class HomePage {
             else
               this.productSlides.slideNext();
         }, 3000)
+    }
+
+    openProductPage(product) {
+        this.navCtrl.push(ProductDetailsPage, {"product": product} );
     }
 } 

@@ -8,8 +8,9 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item text-wrap *ngFor="let item of newsData">
-      <p>{{item.data.title}}</p>
+    <ion-item text-wrap *ngFor="let item of finalResult">
+      <!--<p>{{item.data.title}}</p>-->
+      <p>{{item.name}}</p>
     </ion-item>
   </ion-list>
 </ion-content>

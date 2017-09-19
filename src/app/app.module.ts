@@ -9,6 +9,7 @@ import { ListPage } from '../pages/list/list';
 import { Menu } from '../pages/menu/menu';
 import { InvolvePage } from '../pages/involve/involve';
 import { ProductsByCategoryPage } from '../pages/products-by-category/products-by-category';
+import { ProductDetailsPage } from '../pages/product-details/product-details';
 
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environment';
@@ -21,6 +22,8 @@ import { CategoriesProvider } from '../providers/categories/categories';
 import { ProductsProvider } from '../providers/products/products';
 import { InvolveDataProvider } from '../providers/involve-data/involve-data';
 
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,6 +31,7 @@ import { InvolveDataProvider } from '../providers/involve-data/involve-data';
     ListPage,
     InvolvePage,
     ProductsByCategoryPage,
+    ProductDetailsPage,
     Menu
   ],
   imports: [
@@ -45,12 +49,14 @@ import { InvolveDataProvider } from '../providers/involve-data/involve-data';
     ListPage,
     InvolvePage,
     ProductsByCategoryPage,
+      ProductDetailsPage,
     Menu
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    { provide: LocationStrategy, useClass: PathLocationStrategy },
     CategoriesProvider,
     ProductsProvider,
     InvolveDataProvider

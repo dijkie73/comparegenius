@@ -1,7 +1,8 @@
+<!--<ion-split-pane>-->
 <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
-      <ion-title><ion-icon name="home"></ion-icon>Homes</ion-title>
+      <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -10,7 +11,7 @@
       <ion-item>
         <h2><ion-icon name="home"></ion-icon>Home</h2>
       </ion-item>
-      <ion-item *ngFor="let category of categoryList | async" text-wrap (click)="openCategoryPage(category)">
+      <ion-item *ngFor="let category of categoryList | async" text-wrap (click)="openCategoryPage(category)" menuClose>
         <ion-icon [name]="category.icon" item-left large></ion-icon>
         <h2>
           {{ category.name }}
@@ -30,4 +31,5 @@
 
 </ion-menu>
 
-<ion-nav [root]="homePage" #content></ion-nav>
+<ion-nav [root]="homePage" #content main></ion-nav>
+<!--</ion-split-pane>-->

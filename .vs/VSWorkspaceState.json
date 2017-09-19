@@ -2,11 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\app",
     "\\src\\pages",
     "\\src\\pages\\home",
-    "\\src\\pages\\involve",
-    "\\src\\pages\\menu",
-    "\\src\\theme"
+    "\\src\\pages\\product-details",
+    "\\src\\pages\\products-by-category",
+    "\\src\\providers",
+    "\\src\\providers\\products"
   ],
+  "SelectedNode": "\\src\\app\\app.scss",
   "PreviewInSolutionExplorer": false
 }

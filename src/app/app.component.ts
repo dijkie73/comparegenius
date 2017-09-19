@@ -8,6 +8,11 @@ import { ListPage } from '../pages/list/list';
 import { InvolvePage } from '../pages/involve/involve';
 import { ProductsByCategoryPage } from '../pages/products-by-category/products-by-category';
 import { Menu } from '../pages/menu/menu';
+import * as Constant from '../environment';
+
+declare var gtag: Function;
+
+declare const ENV: any;
 
 @Component({
   templateUrl: 'app.html'
@@ -23,6 +28,8 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
+    console.log('isProduction : ' + ENV.PRODUCTION);
+
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
@@ -30,6 +37,14 @@ export class MyApp {
       { title: 'Involve', component: InvolvePage }
     ];
 
+    console.log('Tracking in initializeApp with ' + Constant.GA_TRACKING_ID);
+    //gtag('config', Constant.GA_TRACKING_ID);
+    gtag('event', 'screen_view', { 'screen_name': 'Home' });
+    gtag('config', Constant.GA_TRACKING_ID, {
+        'page_title': 'menupage2 test',
+        'page_location': 'https://comparegenius.com/menu-test',
+        'page_path': '/menu-test'
+    });
   }
 
   initializeApp() {
