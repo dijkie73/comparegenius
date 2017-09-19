@@ -6,12 +6,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 import * as Constant from '../../environment';
 
 declare var gtag: Function;
-
-@IonicPage({
-  name: 'categories',
-  segment: 'categories'
-}
-)
+  
 @Component({
   selector: 'page-products-by-category',
   templateUrl: 'products-by-category.html',

@@ -49,7 +49,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     ListPage,
     InvolvePage,
     ProductsByCategoryPage,
-      ProductDetailsPage,
+    ProductDetailsPage,
     Menu
   ],
   providers: [
