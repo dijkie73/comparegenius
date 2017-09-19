@@ -32,6 +32,7 @@
     "@ionic/storage": "2.0.1",
     "angularfire2": "^4.0.0-rc.1",
     "compression": "^1.7.0",
+    "cross-env": "^5.0.5",
     "express": "^4.15.4",
     "firebase": "^4.3.1",
     "ionic-angular": "3.6.1",
@@ -43,7 +44,6 @@
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "cross-env": "^5.0.5",
     "npm-check": "^5.4.5",
     "webpack": "^3.5.6"
   },
