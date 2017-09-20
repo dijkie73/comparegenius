@@ -3,14 +3,14 @@
     "",
     "\\env",
     "\\resources",
-    "\\src",
-    "\\src\\assets",
+    "\\src\\app",
     "\\src\\assets\\icon",
     "\\src\\pages\\home",
-    "\\src\\pages\\product-details",
-    "\\src\\pages\\product-list",
-    "\\src\\pages\\products-by-category"
+    "\\src\\pages\\menu",
+    "\\src\\providers",
+    "\\src\\providers\\products",
+    "\\src\\theme"
   ],
-  "SelectedNode": "\\src\\assets\\icon\\favicon.ico",
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
